@@ -1,5 +1,5 @@
-# ethereum-slot-machine
-基于以太坊的水果机游戏V2.0
+# slot-machine
+基于以太坊的老虎机游戏
 
 # 效果
 ![](./demo.gif)
@@ -16,6 +16,5 @@
 
 # 项目的运行
 - （1）启动ganache-cli：ganache-cli
-- （2）编译合约：truffle compile
-- （3）迁移合约：truffle migrate
-- （4）npm运行：npm run dev
+- （2）迁移合约：truffle migrate
+- （3）npm运行：npm run dev

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>以太坊水果机V2.0</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/jquery.slotmachine.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/toastr.min.css" type="text/css" />
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script text="text/javascript" src="js/toastr.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slotmachine.js"></script>
+         <script type="text/javascript" src="js/web3.min.js"></script>
+        <script type="text/javascript" src="js/truffle-contract.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+	</head>
+
+	<body>
+        <div>
+		<div class="header-line"></div>
+        <div id="money">赢得的ETH: <b><span id="balance">0</span></b></div>
+        <button id="whitdraw">出票</button>
+
+        <div class="instructions">
+            <h4><b>指引</b></h4>
+            <h4 id="roll-cost">- 每轮花费 0.1 ether</h4>
+
+			<div class="instruction-table">
+				<div class="instruction-row">
+					<img src="img/slot5.png" width="30" height="30"/>
+					<img src="img/slot5.png" width="30" height="30"/>
+					<img src="img/slot5.png" width="30" height="30"/>
+					<span class="eth-win"> = 3  ether </span>
+				</div>
+
+				<div class="instruction-row">
+					<img src="img/slot6.png" width="30" height="30"/>
+					<img src="img/slot5.png" width="30" height="30"/>
+					<img src="img/slot6.png" width="30" height="30"/>
+					<span class="eth-win"> = 2  ether </span>
+				</div>
+
+				<div class="instruction-row">
+					<img src="img/slot4.png" width="30" height="30"/>
+					<img src="img/slot4.png" width="30" height="30"/>
+					<img src="img/slot4.png" width="30" height="30"/>
+					<span class="eth-win"> = 1.5 ether </span>
+				</div>
+
+				<div class="instruction-row">
+					<img src="img/slot3.png" width="30" height="30"/>
+					<img src="img/slot3.png" width="30" height="30"/>
+					<img src="img/slot3.png" width="30" height="30"/>
+					<span class="eth-win"> = 1.2 ether </span>
+				</div>
+
+				<div class="instruction-row">
+					<img src="img/slot2.png" width="30" height="30"/>
+					<img src="img/slot2.png" width="30" height="30"/>
+					<img src="img/slot2.png" width="30" height="30"/>
+					<span class="eth-win"> = 1  ether </span>
+				</div>
+
+				<div class="instruction-row">
+					<img src="img/slot1.png" width="30" height="30"/>
+					<img src="img/slot1.png" width="30" height="30"/>
+					<img src="img/slot1.png" width="30" height="30"/>
+					<span class="eth-win"> = 0.5 ether </span>
+				</div>
+
+				<div class="instruction-row">
+					<span class="eth-win">2个相同的图案 = 0.1 ether </span>
+				</div>
+			</div>
+     
+        </div>
+
+		<!-- Slot machine example -->
+		<div id="casino" style="padding-top:50px; padding-bottom: 90px;">
+			<div class="content">
+				<h1 id="header-msg">以太坊水果机V2.0</h1>
+
+				<div>
+					<div id="casino1" class="slotMachine" style="margin-left: -65px;">
+						<div class="slot slot1"></div>
+						<div class="slot slot2"></div>
+						<div class="slot slot3"></div>
+						<div class="slot slot4"></div>
+						<div class="slot slot5"></div>
+						<div class="slot slot6"></div>
+					</div>
+
+					<div id="casino2" class="slotMachine">
+						<div class="slot slot1"></div>
+						<div class="slot slot2"></div>
+						<div class="slot slot3"></div>
+						<div class="slot slot4"></div>
+						<div class="slot slot5"></div>
+						<div class="slot slot6"></div>
+					</div>
+
+					<div id="casino3" class="slotMachine">
+						<div class="slot slot1"></div>
+						<div class="slot slot2"></div>
+						<div class="slot slot3"></div>
+						<div class="slot slot4"></div>
+						<div class="slot slot5"></div>
+						<div class="slot slot6"></div>
+					</div>
+
+					<div class="btn-group btn-group-justified btn-group-casino" role="group">
+						<div id="slotMachineButtonShuffle" type="button" class="btn btn-primary btn-lg">开始游戏</div>
+						<div id="slotMachineButtonStop" type="button" class="btn btn-primary btn-lg" data-toggle="tooltip" title="">停止</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="bottom-line"></div>
+        </div>
+
+	</body>
+</html>

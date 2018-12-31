@@ -1,0 +1,240 @@
+ @charset "utf-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+
+.well {
+    background-color: rgba(245, 245, 245, 0.5);
+}
+.badge {
+    font-size: 30px;
+    background-color: rgb(0, 175, 225);
+}
+
+
+a{
+	color: #ccd500;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+	color: #a9b119;
+}
+.clear {
+    clear: both;
+}
+html {
+    /*position: relative;*/
+    height: 100%;
+}
+body {
+}
+b{
+	font-weight: 600;
+}
+
+
+/* Titulos
+-------------------------------------------------------------------------*/
+h1{
+	width: 100%;
+	font-size: 40px;
+	margin-bottom: 25px;
+}
+h2{
+	color: #000000;
+    display: table-cell;
+    float: left;
+    font-size: 45px;
+    line-height: 40px;
+    margin: 0 0 50px;
+    text-align: center;
+    width: 100%;
+    font-weight: 300;
+}
+h2 span{
+	font-weight: 400;
+}
+h3{
+	float: left;
+	width: 100%;
+	margin: 0 0 20px 0;
+	font-size:40px;
+	font-family: 'Lato', 'sans-serif';
+	font-weight: 300;
+}
+h4{
+    display: table-cell;
+    float: left;
+    font-size: 20px;
+    line-height: 31px;
+    margin: 0 0 0;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+}
+
+.header-line {
+    width: 100%;
+    position: absolute;
+    height: 10px;
+    background-color: #195AC8;
+    top: 0px;
+}
+
+.header-line {
+    width: 100%;
+    position: absolute;
+    height: 10px;
+    background-color: #195AC8;
+    bottom: 0px;
+}
+
+
+#money {
+	position: absolute;
+	padding: 70px 90px; 
+    font-size: 18px;
+}
+
+#whitdraw {
+	position: absolute;
+    margin-left: 105px;
+    margin-top: 120px;
+    background-color: rgb(209, 79, 119);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+.instructions {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 200px;
+    border: 7px;
+    border-radius: 4px;
+    width: 300px;
+    height: 400px;
+    border-style: solid;
+}
+
+.instruction-row {
+    margin-left: 60px;
+    padding-bottom: 10px;
+}
+
+
+#roll-cost {
+    padding-bottom: 30px;
+}
+
+
+.eth-win {
+   color: white;
+   font-size: 17px;
+   text-align: center;
+   font-weight: 300; 
+}
+
+/*
+ * Casino
+ */
+#casino {
+    border-top: 20px dotted #195AC8;
+    border-bottom: 20px dotted #195AC8;
+    background-color: #0F99CA;
+}
+
+#casino h1 {
+    margin: 0px;
+}
+
+#casino .content:nth-child(1) {
+    text-align: center;
+    background: url('../img/machine.png') no-repeat 50% 80px;
+    height: 100vh;
+}
+
+#casino .content > div {
+    clear:both;
+    padding-top: 200px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.machineContainer{
+	background-color: #000;
+	padding: 5px 1px 5px 1px;
+	overflow: hidden;
+	height: 135px;
+}
+
+.slotMachine{
+	width: 32.333333%;
+	border: 5px solid #000;
+	height: 100px;
+	padding: 0px;
+	overflow: hidden;
+	display: inline-block;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.btn-group-casino {
+    margin-top: 150px;
+    margin-left: -32px;
+}
+
+.btn-group-casino .btn {
+    border: none;
+    background-color: rgb(209, 79, 119);
+}
+.btn-group-casino .btn:hover, .btn-group-casino .btn:focus {
+    background-color: rgb(180, 75, 119);
+}
+
+
+
+.machineResult{
+	color:#fff;
+	text-align:center;
+	font-weight: 900;
+}
+.noBorder{
+	border:none !important;
+	background: transparent !important;
+}
+.slotMachine .slot{
+	height:100px;
+	background-position-x: 55%;
+	background-repeat: no-repeat;
+}
+
+.slot1 {
+	background-image: url("../img/slot1.png");
+}
+
+.slot2 {
+	background-image: url("../img/slot2.png");
+}
+
+.slot3 {
+	background-image: url("../img/slot3.png");
+}
+
+.slot4 {
+	background-image: url("../img/slot4.png");
+}
+
+.slot5 {
+	background-image: url("../img/slot5.png");
+}
+
+.slot6 {
+	background-image: url("../img/slot6.png");
+}

@@ -5,8 +5,10 @@
 ![](./demo.gif)
 
 # 机器环境
-- win10
+- Ubuntu 16.04
 - nodev8.9.4
+- Truffle
+- ganache-cli
 
 # 安装依赖
 - npm install -g truffle
@@ -14,5 +16,6 @@
 
 # 项目的运行
 - （1）启动ganache-cli：ganache-cli
-- （2）迁移合约：truffle migrate
-- （3）npm install && npm run dev
+- （2）编译合约：truffle compile
+- （3）迁移合约：truffle migrate
+- （4）npm运行：npm run dev
